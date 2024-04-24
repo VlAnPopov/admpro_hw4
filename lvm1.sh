@@ -3,7 +3,7 @@
 mkdir -p ~root/.ssh
 cp ~vagrant/.ssh/auth* ~root/.ssh
 yum -y update
-yum install -y mdadm smartmontools hdparm gdisk xfsdump nano
+yum install -y mdadm smartmontools hdparm gdisk xfsdump lsof
 #готовим временный том
 pvcreate /dev/sdb
 vgcreate vg_root /dev/sdb

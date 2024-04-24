@@ -64,12 +64,11 @@ Vagrant.configure("2") do |config|
                        end
                     end
             end
-        box.vm.provision "shell1", type: "shell", path: "lvm1.sh"
-        box.vm.provision "reboot1", type: "shell", inline: "", reboot: true
-        box.vm.provision "shell2", type: "shell", path: "lvm2.sh"
-        box.vm.provision "reboot2", type: "shell", inline: "", reboot: true
-        box.vm.provision "shell3", type: "shell", path: "lvm3.sh"
-        box.vm.provision "home", type: "shell", path: "home.sh"
+            box.vm.provision "shell1", type: "shell", path: "lvm1.sh"
+            box.vm.provision "reboot1", type: "shell", inline: "", reboot: true
+            box.vm.provision "shell2", type: "shell", path: "lvm2.sh"
+            box.vm.provision "reboot2", type: "shell", inline: "", reboot: true
+            box.vm.provision "shell3", type: "shell", path: "lvm3.sh"
         end
     end
   end
