@@ -1,5 +1,5 @@
-            pvcreate /dev/sdb
-            vgextend VolGroup00 /dev/sdb
+            # pvcreate /dev/sdb
+            # vgextend VolGroup00 /dev/sdb
             lvcreate -n LogVol_Home -L 2G /dev/VolGroup00
             mkfs.xfs /dev/VolGroup00/LogVol_Home
             mount /dev/VolGroup00/LogVol_Home /mnt/
